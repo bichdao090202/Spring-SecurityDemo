@@ -5,9 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
+    <title>Form</title>
 </head>
 <body>
+<form th:action="@{/update}" method="get">
+    <div th:text="'id = '+${e.getId()}"></div>
+    <input th:name="name" placeholder="name" type="text">
 
+    <div>
+        <button type="submit"> Edit  </button>
+    </div>
+</form>
 </body>
 </html>

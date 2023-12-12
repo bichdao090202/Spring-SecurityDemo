@@ -10,4 +10,12 @@ public class SampleController {
     public String hello(){
         return "hello world";
     }
+
+    @GetMapping("/get")
+    public String get(){
+        return "get";
+    }
+
+
+
 }
